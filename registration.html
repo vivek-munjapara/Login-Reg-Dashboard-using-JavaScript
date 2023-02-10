@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration/Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bgo">
+            <a class="navbar-brand ml-5" href="index.html"><img src="images/logo-icon-png-8.png" width="100"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse space mr-5" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+            <div class="row btnn dashboard">
+                <div class="col-md-12">
+                    <form class="gap" id="frm" onsubmit="signup(event)">
+
+                        <h3> Sign Up </h3>
+
+                        <label for="">Please Select Ms/Miss/Mrs: </label>
+                        <select name="title" id="title">
+                            <option value="Mr">Mr</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Mrs">Mrs</option>
+                        </select>
+                        <span class="error"></span>
+
+
+                        <label for="">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
+                        <span class="error"></span>
+
+
+                        <label for="">Last Name</label>
+                        <input type="text" name="lastName" id="lastName">
+                        <span class="error"></span>
+
+
+                        <label for="">Email</label>
+                        <input type="text" name="email" id="email">
+                        <span class="error"></span>
+
+
+                        <label for="">Password</label>
+                        <input type="password" name="password" id="password">
+                        <span class="error"></span>
+
+
+                        <label for="">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <span class="error"></span>
+
+
+                        <input type="checkbox" name="acceptTerms" value="true" checked id="acceptTerms"> I agree the
+                        terms
+                        and
+                        conditions.
+                        <button type="submit" class="btn btn-primary">Registration</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- <p id="demo"></p> -->
+    </section>
+
+    <footer class="">
+        <p>Design and Developed by Vivek Munjapara</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
